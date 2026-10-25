@@ -315,3 +315,7 @@ p { margin: 0 0 1em; }
 .event p { max-width: 46em; }
 .event .gallery { margin-top: 18px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
 .event .when strong { font-size: 1.6rem; }
+
+h4 { color: var(--navy); font-size: 1rem; font-weight: 700; margin: 0 0 .4em; }
+.card h4 + p { color: var(--ink); }
+.card p + h4 { margin-top: 1.2em; }
