@@ -1,8 +1,10 @@
-# site_reme
+# remeufu.github.io
 
 Site do Grupo REME (Remodelando sua Empresa com Matemática e Estatística), projeto de extensão do IME/UFU.
 
-Endereço: https://remeufu.github.io/site_reme/
+Endereço: https://remeufu.github.io/
+
+A pasta `site_reme/` só redireciona o endereço antigo (remeufu.github.io/site_reme/) para o novo.
 
 ## Estrutura
 
