@@ -13,8 +13,14 @@ if (toggle && nav) {
   }));
 }
 
+// Avisos e eventos com data-until="AAAA-MM-DD" somem no dia seguinte a essa data
+const now = new Date();
+const today = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, '0'), String(now.getDate()).padStart(2, '0')].join('-');
+document.querySelectorAll('[data-until]').forEach((el) => { if (today > el.dataset.until) el.remove(); });
+document.querySelectorAll('[data-hide-empty]').forEach((sec) => { if (!sec.querySelector('[data-until]')) sec.remove(); });
+
 // Ampliar fotos das galerias, com setas para a anterior e a próxima
-const buttons = [...document.querySelectorAll('.gallery button')];
+const buttons = [...document.querySelectorAll('.gallery button, .upcoming-art')];
 if (buttons.length) {
   const dialog = document.createElement('dialog');
   dialog.className = 'lightbox';
@@ -46,7 +52,8 @@ if (buttons.length) {
 
   buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
-      group = [...btn.closest('.gallery').querySelectorAll('button')];
+      const gallery = btn.closest('.gallery');
+      group = gallery ? [...gallery.querySelectorAll('button')] : [btn];
       show(group.indexOf(btn));
       dialog.showModal();
     });

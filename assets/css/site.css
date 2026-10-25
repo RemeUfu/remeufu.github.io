@@ -360,3 +360,28 @@ h4 { color: var(--navy); font-size: 1rem; font-weight: 700; margin: 0 0 .4em; }
 .photo-stack img { border-radius: 12px; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .photo-stack figure { margin: 0; }
 .photo-stack figcaption { font-size: .88rem; color: var(--muted); margin-top: 8px; }
+
+/* Faixa de aviso no topo */
+.announce { background: var(--navy-deep); color: #fff; font-size: .92rem; }
+.announce .container { display: flex; align-items: center; justify-content: center; gap: 12px; padding-top: 9px; padding-bottom: 9px; flex-wrap: wrap; text-align: center; }
+.announce-tag { background: var(--orange); color: var(--navy-deep); font-weight: 800; border-radius: 999px; padding: 2px 10px; font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
+.announce a { color: var(--orange); font-weight: 700; text-decoration: none; white-space: nowrap; }
+.announce a::after { content: " →"; }
+.announce a:hover { text-decoration: underline; color: #ffb547; }
+.announce-short { display: none; }
+@media (max-width: 640px) { .announce-text { display: none; } .announce-short { display: inline; } .announce .container { gap: 8px; font-size: .86rem; } }
+
+/* Próximos eventos */
+.upcoming { background: linear-gradient(180deg, #fff 0%, var(--orange-soft) 100%); }
+.upcoming-list { display: grid; gap: 24px; }
+.upcoming-card { display: grid; grid-template-columns: 220px 1fr; gap: 28px; align-items: start; background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--orange); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+.upcoming-art { all: unset; cursor: zoom-in; display: block; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 18px rgba(0, 0, 0, .12); }
+.upcoming-art:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.upcoming-art img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: transform .25s; }
+.upcoming-art:hover img { transform: scale(1.03); }
+.upcoming-date { color: #b35f00; font-weight: 600; margin-bottom: .4em; }
+.upcoming-date strong { font-size: 1.4rem; color: var(--navy); margin-right: 8px; text-transform: uppercase; }
+.upcoming-place { color: var(--muted); font-size: .95rem; }
+.btn-outline { border-color: var(--navy); color: var(--navy); }
+.btn-outline:hover { background: var(--navy-soft); color: var(--navy); }
+@media (max-width: 700px) { .upcoming-card { grid-template-columns: 1fr; } .upcoming-art { max-width: 260px; } }
