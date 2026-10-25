@@ -26,7 +26,7 @@ O site é HTML estático, sem etapa de build. O GitHub Pages publica o que está
 
 ## Como atualizar
 
-- **Novo membro:** copie um bloco `<article class="person">` em `quemsomos.html`, dentro do grupo certo (Docentes ou Discentes), e salve a foto quadrada (400 × 400 px, JPG) em `assets/img/equipe/`.
+- **Novo membro:** copie um bloco `<article class="person">` em `quemsomos.html`, dentro do grupo certo (Docentes ou Discentes), e salve a foto quadrada (400 × 400 px, JPG) em `assets/img/equipe/`. Todas as fotos usam fundo liso azul-claro (`#E8ECF7`): no Mac, o app Fotos recorta a pessoa com "Copiar objeto"; cole sobre um quadrado dessa cor, com cabeça e ombros enquadrados como nas demais.
 - **Nova edição da Oficina:** copie um bloco `<article class="edition">` em `oficinas.html`.
 - **Novo edital:** coloque o PDF em `pdfs/` e copie um item `<li class="card doc">` em `editais.html`. Se houver chamada aberta, troque o aviso amarelo do topo.
 - **Fotos:** reduza para no máximo 1600 px no lado maior antes de enviar. Fotos de câmera com 4 a 5 MB deixam o site lento.
