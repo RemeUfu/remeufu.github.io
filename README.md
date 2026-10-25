@@ -11,6 +11,7 @@ A pasta `site_reme/` só redireciona o endereço antigo (remeufu.github.io/site_
 | Arquivo | Página |
 |---|---|
 | `index.html` | Início: o que fazemos, como funciona, custos, parceiros e contato |
+| `empresas.html` | Para empresas: áreas de atuação, como trabalhamos, editais e Lei do Bem |
 | `quemsomos.html` | Equipe |
 | `oficinas.html` | Oficina REME (edições e fotos) |
 | `projetos.html` | Pôsteres, notícias e eventos |
