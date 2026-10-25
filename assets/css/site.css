@@ -305,3 +305,7 @@ p { margin: 0 0 1em; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Separação entre docentes e discentes na página Equipe */
+.team-group { margin-top: 64px; }
+.team-group p { margin: 0; }
