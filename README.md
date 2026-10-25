@@ -1,2 +1,31 @@
 # site_reme
-Site criado com o propósito de divulgar o grupo REME para a sociedade
+
+Site do Grupo REME (Remodelando sua Empresa com Matemática e Estatística), projeto de extensão do IME/UFU.
+
+Endereço: https://remeufu.github.io/site_reme/
+
+## Estrutura
+
+| Arquivo | Página |
+|---|---|
+| `index.html` | Início: o que fazemos, como funciona, custos, parceiros e contato |
+| `quemsomos.html` | Equipe |
+| `oficinas.html` | Oficina REME (edições e fotos) |
+| `projetos.html` | Pôsteres, notícias e eventos |
+| `editais.html` | Editais do IME/UFU |
+| `assets/css/site.css` | Estilo de todas as páginas |
+| `assets/js/site.js` | Menu no celular e ampliação das fotos |
+| `assets/img/` | Logo, fotos da equipe (`equipe/`), eventos e oficinas |
+| `pdfs/` | Editais, pôsteres e anais |
+
+O site é HTML estático, sem etapa de build. O GitHub Pages publica o que está no branch `main`.
+
+## Como atualizar
+
+- **Novo membro:** copie um bloco `<article class="person">` em `quemsomos.html` e salve a foto quadrada (400 × 400 px, JPG) em `assets/img/equipe/`.
+- **Nova edição da Oficina:** copie um bloco `<article class="edition">` em `oficinas.html`.
+- **Novo edital:** coloque o PDF em `pdfs/` e copie um item `<li class="card doc">` em `editais.html`. Se houver chamada aberta, troque o aviso amarelo do topo.
+- **Fotos:** reduza para no máximo 1600 px no lado maior antes de enviar. Fotos de câmera com 4 a 5 MB deixam o site lento.
+- O cabeçalho e o rodapé se repetem nas cinco páginas. Ao mudar um link do menu ou o contato, altere em todas.
+
+Cores do logo: azul `#092169` e laranja `#FF9906`.

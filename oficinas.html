@@ -1,213 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editais</title>
-    <link rel="stylesheet" href="css/style-editais.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oficina REME · Grupo REME</title>
+<meta name="description" content="Competição em duplas em que estudantes da UFU usam matemática e estatística para propor soluções a um problema real, avaliadas por uma banca.">
+<link rel="canonical" href="https://remeufu.github.io/site_reme/oficinas.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Grupo REME">
+<meta property="og:title" content="Oficina REME · Grupo REME">
+<meta property="og:description" content="Competição em duplas em que estudantes da UFU usam matemática e estatística para propor soluções a um problema real, avaliadas por uma banca.">
+<meta property="og:url" content="https://remeufu.github.io/site_reme/oficinas.html">
+<meta property="og:image" content="https://remeufu.github.io/site_reme/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#092169">
+<link rel="icon" type="image/png" href="assets/img/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <img src="logo.jpeg" alt="Logo do Grupo REME" class="logo">
-            <div>
-                <h1>REME</h1>
-            </div>
-        </div>
-    </header>
-
-    
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Sobre Nós</a></li>         <!-- arquivo separado -->
-            <li><a href="quemsomos.html">Quem Somos</a></li>
-            <li><a href="projetos.html" >Projetos</a></li>
-            <li><a href="editais.html">Editais</a></li>
-            <li><a href="oficinas.html"style="color:#003366;">Oficinas</a></li>
-        </ul>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo-reme-192.png" alt="" width="192" height="192">
+      <span><strong>Grupo REME</strong><span>IME · Universidade Federal de Uberlândia</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#servicos">O que fazemos</a></li>
+        <li><a href="quemsomos.html">Equipe</a></li>
+        <li><a href="oficinas.html" aria-current="page">Oficina REME</a></li>
+        <li><a href="projetos.html">Trabalhos e eventos</a></li>
+        <li><a href="editais.html">Editais</a></li>
+        <li><a class="nav-cta" href="index.html#contato">Contato</a></li>
+      </ul>
     </nav>
+  </div>
+</header>
+<main id="conteudo">
+<section class="page-head">
+  <div class="container">
+    <h1>Oficina REME</h1>
+    <p>Uma competição em duplas, dentro do Workshop de Matemática da UFU. As duplas recebem um problema real, têm dois dias para preparar uma proposta de solução e apresentam o resultado a uma banca de especialistas.</p>
+  </div>
+</section>
 
-    <!-- MAIN -->
-    <main class="content">
+<section class="section">
+  <div class="container">
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Quem participa</h3>
+        <p>Duplas de estudantes de graduação e pós-graduação. Cada dupla precisa ter pelo menos um estudante de Matemática, de Estatística ou da pós-graduação em Matemática.</p>
+      </div>
+      <div class="card">
+        <h3>Como é a avaliação</h3>
+        <p>Uma banca avalia a fundamentação matemática e estatística, a criatividade, a viabilidade, a clareza e o impacto possível. As quatro melhores propostas vão para a final, com apresentação oral.</p>
+      </div>
+      <div class="card">
+        <h3>Prêmio</h3>
+        <p>Cada integrante da dupla vencedora recebe um tablet.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <h2 class="section-title">Oficinas</h2>
+<section class="section alt">
+  <div class="container">
+    <h2 class="visually-hidden">Edições</h2>
 
-        <!-- FILTRO -->
-        <div class="filter-box">
-            <label>Filtrar por ano:</label>
-            <select id="filter-year">
-                <option value="all">Todos</option>
-                <option value="2025">2025</option>
-                <option value="2024">2024</option>
-            </select>
+    <article class="edition">
+      <div class="when"><strong>2026</strong>II Workshop de Matemática<br>12 a 14 de agosto</div>
+      <div>
+        <h3>Desafios reais, soluções com matemática e estatística</h3>
+        <p>O desafio da segunda edição foi sobre o trânsito de Uberlândia. As duplas trabalharam com dados de acidentes e propuseram medidas para a cidade. Em 2025, segundo o Observatório de Segurança Pública de Minas Gerais, Uberlândia registrou 15.527 acidentes de trânsito, com 4.173 vítimas e 51 mortes.</p>
+        <p>Os resultados foram apresentados em pôster na III Mostra Extensionista do IME, em 20 de outubro de 2026.</p>
+        <p><a class="link-arrow" href="https://comunica.ufu.br/noticias/2026/08/atividade-desafia-estudantes-criar-solucoes-matematicas-para-o-transito-de">Notícia no Comunica UFU</a></p>
+      </div>
+    </article>
+
+    <article class="edition">
+      <div class="when"><strong>2025</strong>I Workshop de Matemática<br>5 a 7 de agosto</div>
+      <div>
+        <h3>Explorando soluções empresariais com matemática e estatística</h3>
+        <p>Na primeira edição, 16 duplas trabalharam em um problema de gestão de risco ambiental: identificar as áreas com maior risco de incêndio em fazendas de reflorestamento. A oficina foi conduzida pelos professores Rosana Jafelice e Josuel Rogenski, no Bloco 5R do Campus Santa Mônica.</p>
+        <ul class="tags" style="margin-bottom:1em">
+          <li><a href="https://comunica.ufu.br/noticias/2025/08/da-sala-de-aula-para-o-mercado-iniciativa-da-ufu-mostra-como-matematica-pode">Notícia no Comunica UFU</a></li>
+          <li><a href="https://comunica.ufu.br/ufu-em-imagens/2025/08/1deg-workshop-de-matematica-da-ufu">Fotos no UFU em Imagens</a></li>
+          <li><a href="pdfs/anais_workshop_matematica_2025.pdf">Anais do workshop (PDF)</a></li>
+          <li><a href="https://eventos.ufu.br/ime/wm">Página do workshop</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <h3 style="margin:24px 0 20px">Fotos da Oficina REME 2025</h3>
+    <ul class="gallery">
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5380.jpg" alt="Auditório lotado durante a abertura da oficina" loading="lazy" width="1600" height="1060"></button><figcaption>Abertura, com a presença do reitor da UFU.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5383.jpg" alt="Apresentação do desafio com mapa de risco de incêndio projetado" loading="lazy" width="1600" height="1060"></button><figcaption>Apresentação do desafio aos participantes.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5388.jpg" alt="Membros da banca sentados na primeira fila do auditório" loading="lazy" width="1600" height="1060"></button><figcaption>Banca avaliadora da primeira etapa.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5403.jpg" alt="Dupla Vai com Bayes em frente ao banner do workshop" loading="lazy" width="1600" height="1060"></button><figcaption>Dupla “Vai com Bayes”, finalista.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5408.jpg" alt="Dupla Deep Layer em frente ao banner do workshop" loading="lazy" width="1600" height="1060"></button><figcaption>Dupla “Deep Layer”, finalista.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5437.jpg" alt="Dupla finalista em frente ao banner do workshop" loading="lazy" width="1600" height="1060"></button><figcaption>Dupla finalista.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5407.jpg" alt="Dupla apresenta sua proposta no palco" loading="lazy" width="1600" height="1060"></button><figcaption>Apresentação da dupla “Deep Layer” na final.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5410.jpg" alt="Dupla apresenta sua proposta ao microfone" loading="lazy" width="1600" height="1060"></button><figcaption>Apresentação de dupla finalista.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5443.jpg" alt="Mesa da banca e dupla se apresentando ao fundo" loading="lazy" width="1600" height="1060"></button><figcaption>Final da oficina.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/dsc_5447.jpg" alt="Membros da banca avaliadora em frente às bandeiras" loading="lazy" width="1600" height="1060"></button><figcaption>Banca avaliadora da final.</figcaption></figure></li>
+      <li><figure><button type="button" aria-label="Ampliar foto"><img src="assets/img/oficina-2025/premiacao.jpg" alt="Dupla vencedora com certificados ao lado das organizadoras" loading="lazy" width="1280" height="960"></button><figcaption>Premiação da dupla vencedora.</figcaption></figure></li>
+    </ul>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/img/logo-reme-192.png" alt="" width="192" height="192">
+          <strong>Grupo REME</strong>
         </div>
-
-        <div class="editais-container">
-
-            <!-- 2025 -->
-            <div class="year-block">
-                <h3 class="year">2025</h3>
-                <ul class="edital-list">
-                    <li class="edital-card">
-                        <strong>I Workshop de Matemática — UFU</strong><br>
-                        A primeira Oficina do REME ocorreu no I Workshop de Matemática, veja mais em: <a href="https://eventos.ufu.br/ime/wm" target="_blank">[Workshop]</a><br><br>
-                        <strong>Oficina REME</strong> <br>
-                        Da sala de aula para o mercado: iniciativa da UFU mostra como a matemática pode transformar empresas, veja mais em:<a href="https://comunica.ufu.br/noticias/2025/08/da-sala-de-aula-para-o-mercado-iniciativa-da-ufu-mostra-como-matematica-pode">[Oficina]
-                        </a> <br><br>
-                        <strong>Fotos do Evento</strong><br>
-                        Veja algumas fotos do evento em: <a href="https://comunica.ufu.br/ufu-em-imagens/2025/08/1deg-workshop-de-matematica-da-ufu">[Fotos]</a> <br><br>
-                        <strong>Anais do Evento</strong><br>
-                        Veja os anais do evento em: <a href="pdfs/anais_workshop_matematica_2025.pdf" target="_blank">[PDF]</a>
-                    </li>
-
-                    <!-- <li class="edital-card">
-                        <strong>Em breve</strong> — UFU  
-                        <a href="pdfs/artigo_2025.pdf" target="_blank">[PDF]</a>
-                    </li> -->
-                </ul>
-            </div>
-
-            <!-- 2024 -->
-            <!-- <div class="year-block">
-                <h3 class="year">2024</h3>
-                <ul class="edital-list">
-                    <li class="edital-card">
-                        <strong>Em breve</strong> — UFU  
-                        <a href="pdfs/artigo_2025.pdf" target="_blank">[PDF]</a>
-                    </li>
-
-                    <li class="edital-card">
-                        <strong>Em breve</strong> — UFU  
-                        <a href="pdfs/artigo_2025.pdf" target="_blank">[PDF]</a>
-                    </li>
-                </ul>
-            </div> -->
-
-            <div class="carousel" id="carousel">
-            <h2>Fotos da 1° Oficina REME</h2>
-        <div class="slides" id="slides">
-            <!-- Troque as imagens abaixo pelos seus arquivos -->
-            <div class="slide"><img src="imgworkshop/DSC_5380.JPG" alt="Imagem 3"><p class="caption">Participação do Reitor da UFU na Oficina</p></div>
-            <div class="slide"><img src="imgworkshop/DSC_5383.JPG" alt="Imagem 4"><p class="caption">Apresentação do desafio para os participantes</p></div>
-            <div class="slide"><img src="imgworkshop/DSC_5388.JPG" alt="Imagem 1"><p class="caption">Alguns membros da banca avaliadora da 1° etapa do desafio</p></div>
-            <div class="slide"><img src="imgworkshop/DSC_5403.JPG" alt="Imagem 2"><p class="caption">Dupla "Vai com Bayer" qualificada para as finais</p></div>
-            <div class="slide"><img src="imgworkshop/DSC_5408.JPG" alt="Imagem 5"><p class="caption">Dupla "Deep Layer" qualificada para as finais</p></div>
-            <div class="slide"><img src="imgworkshop/DSC_5437.JPG" alt="Imagem 6"><p class="caption">Dupla "" qualificada para as finais</p></div>
-            <div class="slide"><img src="imgworkshop/DSC_5410.JPG" alt="Imagem 7"><p class="caption">Apresentação da dupla "" nas finais</p></div>
-            <div class="slide"><img src="imgworkshop/DSC_5407.JPG" alt="Imagem 8"><p class="caption">Apresentação da dupla "Deep Layer" nas finais</p></div>
-            <div class="slide"><img src="imgworkshop/DSC_5443.JPG" alt="Imagem 9"><p class="caption">Apresentação da dupla "" nas finais</p></div>
-            <div class="slide"><img src="imgworkshop/DSC_5447.JPG" alt="Imagem 10"><p class="caption">Menbros da banca avaliadora da etapa final</p></div>
-            <div class="slide"><img src="imgworkshop/fotoVictorFernanda.jfif" alt="Imagem 11"><p class="caption">Dupla vencedora da 1ª Oficina REME 2025</p></div>
-        </div>
-
-        <button class="btn btn-left" id="prev" aria-label="Anterior">◀</button>
-        <button class="btn btn-right" id="next" aria-label="Próximo">▶</button>
-
-        <div class="dots" id="dots"></div>
-        </div>
-
-        </div>
-
-        
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>&copy; 2025 Grupo REME - UFU. Todos os direitos reservados.</p>
-    </footer>
-
-
-    <!-- SCRIPT DO FILTRO -->
-    <script>
-        document.getElementById('filter-year').addEventListener('change', function() {
-            const year = this.value;
-            const blocks = document.querySelectorAll('.year-block');
-
-            blocks.forEach(block => {
-                const blockYear = block.querySelector('.year').textContent.trim();
-                block.style.display = (year === "all" || year === blockYear) ? "block" : "none";
-            });
-        });
-    </script>
-    
-    <!-- SCRIPT DO CARROSSEL -->
-     <script>
-        (function(){
-        const slidesEl = document.getElementById('slides');
-        const slides = Array.from(slidesEl.querySelectorAll('.slide'));
-        const prevBtn = document.getElementById('prev');
-        const nextBtn = document.getElementById('next');
-        const dotsContainer = document.getElementById('dots');
-        let index = 0;
-        const total = slides.length;
-
-        // criar dots
-        const dots = [];
-        for(let i=0;i<total;i++){
-            const d = document.createElement('button');
-            d.className = 'dot';
-            d.setAttribute('aria-label','Ir para slide ' + (i+1));
-            d.addEventListener('click', ()=> goTo(i));
-            dotsContainer.appendChild(d);
-            dots.push(d);
-        }
-
-        function update(){
-            slidesEl.style.transform = `translateX(-${index * 100}%)`;
-            dots.forEach((d,i)=> d.classList.toggle('active', i===index));
-        }
-
-        function next(){
-            index = (index + 1) % total;
-            update();
-        }
-        function prev(){
-            index = (index - 1 + total) % total;
-            update();
-        }
-        function goTo(i){
-            index = ((i % total)+total)%total;
-            update();
-        }
-
-        // eventos
-        nextBtn.addEventListener('click', next);
-        prevBtn.addEventListener('click', prev);
-
-        // teclas ← e →
-        document.addEventListener('keydown', (e)=>{
-            if(e.key === 'ArrowLeft') prev();
-            if(e.key === 'ArrowRight') next();
-        });
-
-        // opcional: autoplay (comente se não quiser)
-        let autoplayInterval = null;
-        function startAutoplay(){
-            autoplayInterval = setInterval(next, 10000); // muda a cada 4s
-        }
-        function stopAutoplay(){
-            clearInterval(autoplayInterval);
-            autoplayInterval = null;
-        }
-        // começa autoplay e pausa ao passar mouse
-        startAutoplay();
-        const carousel = document.getElementById('carousel');
-        carousel.addEventListener('mouseenter', stopAutoplay);
-        carousel.addEventListener('mouseleave', startAutoplay);
-
-        // inicializa
-        update();
-
-        // (Opcional) suporte a swipe em telas touch:
-        let startX = 0;
-        slidesEl.addEventListener('touchstart', e => startX = e.touches[0].clientX);
-        slidesEl.addEventListener('touchend', e => {
-            const dx = e.changedTouches[0].clientX - startX;
-            if(Math.abs(dx) > 40) dx < 0 ? next() : prev();
-        });
-
-        })();
-        </script>
-
+        <p>Remodelando sua Empresa com Matemática e Estatística. Projeto de extensão do Instituto de Matemática e Estatística da Universidade Federal de Uberlândia (SIEX 32266).</p>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <ul>
+          <li><a href="mailto:reme@ime.ufu.br">reme@ime.ufu.br</a></li>
+          <li>Av. João Naves de Ávila, 2121<br>Bloco 1F, sala 120, Campus Santa Mônica<br>Uberlândia (MG)</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Redes</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/gruporemeufu">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/gruporeme">LinkedIn</a></li>
+          <li><a href="https://ime.ufu.br">IME/UFU</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Grupo REME · IME/UFU</span>
+      <span>Uberlândia, Minas Gerais</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
