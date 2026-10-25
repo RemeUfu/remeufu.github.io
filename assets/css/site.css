@@ -229,7 +229,12 @@ p { margin: 0 0 1em; }
 .lightbox::backdrop { background: rgba(6, 22, 80, .88); }
 .lightbox img { max-height: 82vh; width: auto; margin: 0 auto; border-radius: 10px; }
 .lightbox p { color: #fff; text-align: center; margin: 12px 0 0; }
-.lightbox button { position: fixed; top: 16px; right: 16px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: #fff; color: var(--navy); font-size: 1.4rem; cursor: pointer; }
+.lightbox button { position: fixed; width: 44px; height: 44px; border-radius: 50%; border: 0; background: #fff; color: var(--navy); font-size: 1.6rem; line-height: 1; cursor: pointer; }
+.lightbox .lb-close { top: 16px; right: 16px; }
+.lightbox .lb-prev, .lightbox .lb-next { top: 50%; transform: translateY(-50%); }
+.lightbox .lb-prev { left: 16px; }
+.lightbox .lb-next { right: 16px; }
+.lightbox button[hidden] { display: none; }
 
 /* Listas de documentos e edições */
 .doc-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }

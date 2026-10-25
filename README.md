@@ -19,6 +19,8 @@ A pasta `site_reme/` só redireciona o endereço antigo (remeufu.github.io/site_
 | `assets/js/site.js` | Menu no celular e ampliação das fotos |
 | `assets/img/` | Logo, fotos da equipe (`equipe/`), eventos e oficinas |
 | `pdfs/` | Editais, pôsteres e anais |
+| `404.html` | Página mostrada quando um endereço não existe |
+| `sitemap.xml`, `robots.txt` | Orientam o Google sobre quais páginas indexar |
 
 O site é HTML estático, sem etapa de build. O GitHub Pages publica o que está no branch `main`.
 
@@ -28,6 +30,8 @@ O site é HTML estático, sem etapa de build. O GitHub Pages publica o que está
 - **Nova edição da Oficina:** copie um bloco `<article class="edition">` em `oficinas.html`.
 - **Novo edital:** coloque o PDF em `pdfs/` e copie um item `<li class="card doc">` em `editais.html`. Se houver chamada aberta, troque o aviso amarelo do topo.
 - **Fotos:** reduza para no máximo 1600 px no lado maior antes de enviar. Fotos de câmera com 4 a 5 MB deixam o site lento.
+- **Galerias:** cada foto tem duas versões. A grande fica na pasta (por exemplo `assets/img/eventos/`) e abre ao clicar; a miniatura, recortada em 640 × 480 px, fica na subpasta `thumbs/` com o mesmo nome.
+- **Nova página:** inclua o endereço em `sitemap.xml`, para o Google encontrá-la.
 - O cabeçalho e o rodapé se repetem nas cinco páginas. Ao mudar um link do menu ou o contato, altere em todas.
 
 Cores do logo: azul `#092169` e laranja `#FF9906`.
