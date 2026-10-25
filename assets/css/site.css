@@ -309,3 +309,9 @@ p { margin: 0 0 1em; }
 /* Separação entre docentes e discentes na página Equipe */
 .team-group { margin-top: 64px; }
 .team-group p { margin: 0; }
+
+/* Eventos do ano na página Trabalhos e eventos */
+.event { padding: 32px 0; }
+.event p { max-width: 46em; }
+.event .gallery { margin-top: 18px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.event .when strong { font-size: 1.6rem; }
