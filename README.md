@@ -28,7 +28,7 @@ O site é HTML estático, sem etapa de build. O GitHub Pages publica o que está
 ## Como atualizar
 
 - **Novo membro:** copie um bloco `<article class="person">` em `quemsomos.html`, dentro do grupo certo (Docentes ou Discentes, em ordem alfabética), e salve a foto quadrada (400 × 400 px, JPG) em `assets/img/equipe/`. Use o nome completo como está no Lattes e preencha a lista `<dl class="bio">` sempre na mesma ordem:
-  - **Docentes:** Doutorado (área, instituição) · Unidade (IME, FACOM ou FEMEC, com `<abbr>`) · Áreas · link do Currículo Lattes.
+  - **Docentes:** Graduação (curso, instituição) · Pós-graduação (mestrado, doutorado e pós-doutorado, um `<dd>` para cada) · Unidade (IME, FACOM ou FEMEC, com `<abbr>`) · Áreas · link do Currículo Lattes.
   - **Discentes:** Graduação (curso, instituição) · Pós-graduação (mestrado, especialização ou MBA, um `<dd>` para cada) · Cursando (nível e curso, instituição) · Áreas · link do Currículo Lattes. Omita a linha que não se aplica.
   - Instituições por sigla: Unicamp, UFU, UNESP, UFLA, ICMC/USP, ESALQ/USP, PUC-SP; as estrangeiras levam o país entre parênteses.
 - **Nova edição da Oficina:** copie um bloco `<article class="edition">` em `oficinas.html`.
