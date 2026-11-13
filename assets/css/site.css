@@ -59,7 +59,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 480px) { .brand > span > span { display: none; } }
 .nav ul { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; align-items: center; }
 .nav a {
-  display: block; padding: 8px 12px; border-radius: 8px;
+  display: block; padding: 8px 10px; border-radius: 8px;
   text-decoration: none; color: var(--ink); font-size: .95rem; font-weight: 550; white-space: nowrap;
 }
 .nav a:hover { background: var(--navy-soft); color: var(--navy); }
@@ -72,7 +72,7 @@ p { margin: 0 0 1em; }
 }
 .nav-toggle svg { width: 22px; height: 22px; margin: auto; }
 
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
   .nav-toggle { display: grid; place-items: center; }
   .nav { position: absolute; left: 0; right: 0; top: 72px; background: #fff; border-bottom: 1px solid var(--line); display: none; }
   .nav.open { display: block; }
@@ -388,3 +388,28 @@ h4 { color: var(--navy); font-size: 1rem; font-weight: 700; margin: 0 0 .4em; }
 .btn-outline { border-color: var(--navy); color: var(--navy); }
 .btn-outline:hover { background: var(--navy-soft); color: var(--navy); }
 @media (max-width: 700px) { .upcoming-card { grid-template-columns: 1fr; } .upcoming-art { max-width: 260px; } }
+
+/* Áreas de pesquisa (areas.html): cada área tem a sua cor, como no folder */
+.area--dados { --area: #a85a00; --area-soft: var(--orange-soft); }
+.area--modelagem { --area: #3b4fae; --area-soft: #e8ecf7; }
+.area--engenharia { --area: var(--navy); --area-soft: #dfe5f5; }
+.area--seguranca { --area: #b8382a; --area-soft: #fdebe7; }
+.area-icon { display: grid; place-items: center; flex: none; width: 52px; height: 52px; border-radius: 14px; background: var(--area-soft); color: var(--area); }
+.area-icon svg { width: 26px; height: 26px; }
+.area-jump { list-style: none; padding: 0; margin: 28px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.area-jump a {
+  display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px 6px 6px; border-radius: 999px;
+  background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .22); color: #fff;
+  text-decoration: none; font-weight: 600; font-size: .95rem;
+}
+.area-jump a:hover { background: rgba(255, 255, 255, .18); }
+.area-jump .area-icon { width: 30px; height: 30px; border-radius: 50%; }
+.area-jump .area-icon svg { width: 16px; height: 16px; }
+.area-head { display: flex; gap: 20px; align-items: flex-start; max-width: 50em; margin-bottom: 40px; }
+.area-head h2 { margin-bottom: .25em; }
+.area-head p { color: var(--muted); font-size: 1.08rem; margin: 0; }
+.area-topics .card { border-top: 4px solid var(--area); }
+.area-topics .card > p { color: var(--muted); }
+.area-topics .card ul { color: var(--ink); }
+.area-topics h4 { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--area); }
+@media (max-width: 560px) { .area-head { flex-direction: column; gap: 14px; } }

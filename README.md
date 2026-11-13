@@ -13,6 +13,7 @@ A pasta `site_reme/` só redireciona o endereço antigo (remeufu.github.io/site_
 | `index.html` | Início: o que fazemos, como funciona, custos, parceiros e contato |
 | `empresas.html` | Para empresas: áreas de atuação, como trabalhamos, editais e Lei do Bem |
 | `quemsomos.html` | Equipe |
+| `areas.html` | Áreas de pesquisa: as quatro áreas do folder, o que cada tema estuda e que problemas resolve |
 | `oficinas.html` | Oficina REME (edições e fotos) |
 | `projetos.html` | Pôsteres, notícias e eventos |
 | `editais.html` | Editais do IME/UFU |
@@ -38,6 +39,6 @@ O site é HTML estático, sem etapa de build. O GitHub Pages publica o que está
 - **Nova página:** inclua o endereço em `sitemap.xml`, para o Google encontrá-la.
 - **Próximos eventos:** ficam na seção `#proximos-eventos` de `index.html`, e a faixa de aviso fica no topo de todas as páginas (bloco `<div class="announce">`). Cada item tem `data-until="AAAA-MM-DD"` e some sozinho no dia seguinte a essa data; se não sobrar nenhum evento, a seção some também. Para anunciar um novo evento, troque o texto e a data.
 - **Cache:** ao mudar `site.css` ou `site.js`, troque o número `?v=` nos links dessas folhas em todas as páginas, para os navegadores baixarem a versão nova.
-- O cabeçalho e o rodapé se repetem nas cinco páginas. Ao mudar um link do menu ou o contato, altere em todas.
+- O cabeçalho e o rodapé se repetem em todas as páginas. Ao mudar um link do menu ou o contato, altere em todas.
 
 Cores do logo: azul `#092169` e laranja `#FF9906`.
