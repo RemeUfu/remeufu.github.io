@@ -228,15 +228,18 @@ p { margin: 0 0 1em; }
 .person .body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
 .person h3 { font-size: 1.08rem; margin-bottom: .25em; }
 .person .role { color: #b35f00; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .4em; }
-.person .area { color: var(--ink); margin-bottom: .5em; font-size: .98rem; }
-.person .meta { color: var(--muted); font-size: .9rem; margin-bottom: 1em; }
+.person .bio { display: grid; gap: .55em; margin: .45em 0 1.1em; font-size: .92rem; }
+.person .bio dt { color: var(--muted); font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .1em; }
+.person .bio dd { margin: 0; color: var(--ink); line-height: 1.4; }
+.person .bio dd + dd { margin-top: .2em; }
+.person .bio abbr { text-decoration: none; cursor: help; }
 .person .links { margin-top: auto; font-size: .92rem; font-weight: 600; }
 @media (max-width: 560px) {
   .team { grid-template-columns: 1fr; gap: 14px; }
   .person { flex-direction: row; align-items: flex-start; }
   .person img { width: 96px; height: 96px; flex: none; margin: 18px 0 18px 18px; border-radius: 50%; }
   .person .body { padding: 16px 18px; }
-  .person .area, .person .meta { margin-bottom: .4em; }
+  .person .bio { margin-bottom: .8em; }
 }
 
 /* Galeria */
